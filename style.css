@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 2.5em;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background: #ff6347; /* Tomato color */
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section:nth-of-type(even) {
+    background: #f9f9f9;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+    position: relative;
+}
+
+.section h2::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #ff6347;
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+.profile-pic {
+    width: 180px; /* adjust the width to your desired size */
+    height: 180px; /* adjust the height to your desired size */
+    border-radius:20%; /* add a circular border radius */
+    object-fit: cover; /* ensure the image is scaled to fit the container */
+    margin: 10px; /* add some margin around the image */
+  }
+
+/* Skills Styles */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ada8a8;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+#skills ul li:hover {
+    background: #ff6347;
+    color:#ddd;
+    border-color: #ff6347;
+}
+
+/* Projects Styles */
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.project p {
+    margin: 0;
+    color: #666;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Styles */
+#contact p {
+    text-align: center;
+}
+
+#contact a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1, header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul {
+        padding-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #skills ul li {
+        display: block;
+        margin: 10px auto;
+    }
+}
